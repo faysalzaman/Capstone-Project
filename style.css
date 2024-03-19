@@ -1,0 +1,299 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}  
+
+.two_cards { 
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.card {  
+  width: 45%;
+  float: left;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+} 
+
+.tile-image {
+  width: 300px;
+  object-fit: cover;
+  border-radius: 8px;  
+  float: left;  
+  margin-right: 20px;
+  
+}
+
+.title {
+  color: #f8728d;
+}
+
+span {
+  color: #f1356d;
+}
+
+h1 {
+  font-size: 5rem;
+} 
+
+h2 {
+  font-size: 3rem;
+  color: #f1356d;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+} 
+
+/* TODO: Change the background color for each device
+[lightsalmon] Mobile Devices: 319px — 480px
+[powderblue] iPads and Tablets: 481px — 1200px
+[limegreen] Laptops: 1201px — 1600px
+[seagreen] Desktops: 1601px and more */
+
+@media (min-width: 319px) and (max-width: 480px) { 
+
+
+  .two_cards { 
+    display: block;
+    margin: 20px 0;
+  }
+  
+  .card {  
+    width: 100%;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    margin: 20px 0;
+    padding: 10px 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); 
+    align-items: center;
+  } 
+  
+  .tile-image {  
+    width: 100%; 
+    float: none;
+    object-fit: fill;
+    border-radius: 4px;  
+    margin-right: 20px;
+  }
+  
+  .title {
+    color: #f8728d;
+  }
+  
+  span {
+    color: #f1356d;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  } 
+
+  h2 {
+    font-size: 1rem;
+    color: #f1356d; 
+    text-align: center;
+  }  
+
+  p {
+    font-size: 1rem; 
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+    color: midnightblue;
+  }  
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .two_cards { 
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    padding: 0 20px; 
+    margin: 20px 0; 
+  } 
+  .card {  
+    width: 100%;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    margin: 20px 0;
+    padding: 20px; 
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  } 
+
+  .tile-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;  
+    float: left;  
+    margin-right: 20px;
+  } 
+
+  .title {
+    color: #f8728d; 
+
+  } 
+
+  span {
+    color: #f1356d; 
+
+  } 
+
+  h1 {
+    font-size: 4rem; 
+    text-align: center; 
+  } 
+
+  h2 {
+    font-size: 2rem;
+    color: #f1356d; 
+    text-align: center;
+  }  
+
+  p {
+    font-size: 1.2rem; 
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+    color: midnightblue;
+  } 
+
+}
+
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .two_cards { 
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    padding: 0 20px; 
+    margin: 20px 0; 
+  } 
+  .card {   
+    flex: 1;
+    width: 50%;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    margin: 20px 0;
+    padding: 20px; 
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  } 
+
+  .tile-image {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 8px;  
+    float: left;  
+    margin-right: 20px;
+  } 
+
+  .title {
+    color: #f8728d; 
+
+  } 
+
+  span {
+    color: #f1356d; 
+
+  } 
+
+  h1 {
+    font-size: 4rem; 
+    text-align: center; 
+  } 
+
+  h2 {
+    font-size: 2rem;
+    color: #f1356d; 
+    text-align: center;
+  }  
+
+  p {
+    font-size: 1.2rem; 
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+    color: midnightblue;
+  } 
+
+}
+
+
+@media (min-width: 1601px) {
+  .two_cards { 
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    padding: 0 20px; 
+    margin: 20px 0; 
+  } 
+  .card {   
+    flex: 1;
+    width: 50%;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    margin: 20px 0;
+    padding: 20px; 
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  } 
+
+  .tile-image {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 8px;  
+    float: left;  
+    margin-right: 20px;
+  } 
+
+  .title {
+    color: #f8728d; 
+
+  } 
+
+  span {
+    color: #f1356d; 
+
+  } 
+
+  h1 {
+    font-size: 4rem; 
+    text-align: center; 
+  } 
+
+  h2 {
+    font-size: 2rem;
+    color: #f1356d; 
+    text-align: center;
+  }  
+
+  p {
+    font-size: 1.2rem; 
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+    color: midnightblue;
+  } 
+
+}
+
